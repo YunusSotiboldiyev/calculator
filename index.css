@@ -1,0 +1,84 @@
+:root {
+    --primary: rgb(0, 0, 0);
+    --darkness: rgb(45, 43, 43);
+    --light: aqua;
+    --mine: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    background-color: var(--mine);
+}
+
+.App {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.calculator {
+    width: 100%;
+    max-width: 425px;
+    background-color: rgb(94, 100, 100);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.display {
+    padding: 16px;
+    text-align: right;
+    background-color: var(--darkness);
+    color: var(--light);
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.display span {
+    font-size: 16px;
+    color: rgb(172, 163, 163);
+}
+
+button {
+    appearance: none;
+    border: none;
+    outline: none;
+    color: aqua;
+    font-size: 20px;
+    padding: 16px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+button:hover {
+    opacity: 0.1;
+    overflow: scroll;
+}
+
+.operators {
+    display: flex;
+}
+
+.operators button {
+    flex: 1 1 0%;
+    background-color: var(--primary);
+    font-weight: 90;
+}
+
+.digitals {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.digitals button {
+    flex: 1 1 33.333%;
+    max-width: 33.333%;
+    background-color: var(--darkness);
+}
